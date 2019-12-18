@@ -1,0 +1,16 @@
+{
+  "title": "Sync by AVA",
+  "description": "Sync extension to connect with Sync Mongo Storage Engine",
+  "docsUrl": "https://github.com/thatapp/Sync",
+  "buildType":"docker",
+  "actions": {
+    "upsert": {
+      "main": "./lib/actions/upsert.js",
+      "title": "Add/Update data into Sync Mongo",
+      "description": "Update data",
+      "metadata": {
+        "in": "./lib/schemas/upsert.in.json"
+      }
+    }
+  }
+}
