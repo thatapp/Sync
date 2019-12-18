@@ -1,16 +1,6 @@
 {
   "type": "object",
   "properties": {
-    "username": {
-      "type": "string",
-      "required": true,
-      "title": "MongoDB username"
-    },
-    "password": {
-      "type": "string",
-      "required": true,
-      "title": "MongoDB password"
-    },
     "database": {
       "type": "string",
       "required": true,
