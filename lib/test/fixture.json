@@ -17,7 +17,8 @@
         "collection" : "test_collection",
         "condition" : { "item_id": "ZZZ135" },
         "data": {
-          "name" : "william"
+          "name" : "william",
+          "item_id" : "dssds"
         }
       }
     }
