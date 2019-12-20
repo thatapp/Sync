@@ -13,7 +13,7 @@ if (fs.existsSync('.env')) {
 }
 
 // eslint-disable-next-line consistent-return
-module.exports = function verify(credentials, cb) {
+module.exports = async function verify(credentials, cb) {
     console.log(JSON.stringify(credentials));
     if (!credentials.username || credentials.password) {
         return cb(null, { verified: false });
@@ -25,7 +25,7 @@ module.exports = function verify(credentials, cb) {
 
     const uri = "mongodb+srv://"+credentials.username+":"+credentials.password+"@sync-thatapp-mrjt2.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
-    MongoClient.connect(uri, options,function(err, client) {
+    await MongoClient.connect(uri, options,function(err, client) {
         assert.equal(null, err);
         console.log("Connected successfully to server");
         return cb(null, { verified: true });
