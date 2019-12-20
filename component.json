@@ -19,6 +19,10 @@
         "label": "Environment",
         "viewClass": "SelectView",
         "required": true,
+        "model": {
+          "test": "Sandbox",
+          "login": "Production"
+        },
         "prompt": "Select environment"
       },
       "oauth": {
