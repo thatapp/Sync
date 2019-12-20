@@ -1,18 +1,6 @@
-const request = require('request');
-const fs = require('fs');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const { messages } = require('elasticio-node');
 
-
-const debug = require('debug')('verifyCredentials');
-
-if (fs.existsSync('.env')) {
-    // eslint-disable-next-line global-require
-    require('dotenv').config();
-}
-
-// eslint-disable-next-line consistent-return
 module.exports = async function verify(credentials, cb) {
     console.log(JSON.stringify(credentials));
     if (!credentials.username || credentials.password) {
