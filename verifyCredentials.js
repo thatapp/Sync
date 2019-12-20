@@ -28,7 +28,8 @@ module.exports = async function verify(credentials, cb) {
     await MongoClient.connect(uri, options,function(err, client) {
         assert.equal(null, err);
         console.log("Connected successfully to server");
-        return cb(null, { verified: true });
+
     });
+    return cb(null, { verified: true });
 };
 
