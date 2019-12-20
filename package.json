@@ -20,6 +20,7 @@
         "dotenv": "^8.2.0",
         "elasticio-node": "0.0.8",
         "elasticio-sailor-nodejs": "2.5.1",
+        "jsonata": "^1.7.0",
         "mongodb": "3.3.4",
         "request": "2.88.0"
     },
