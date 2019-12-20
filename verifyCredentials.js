@@ -3,9 +3,9 @@ const assert = require('assert');
 
 module.exports = async function verify(credentials, cb) {
     console.log(JSON.stringify(credentials));
-    if (!credentials.username || credentials.password) {
-        return cb(null, { verified: false });
-    }
+    // if (!credentials.username || credentials.password) {
+    //     return cb(null, { verified: false });
+    // }
     debug('To verify credentials send request to %s', url);
 
     var options = {
