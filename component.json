@@ -16,19 +16,16 @@
   "credentials": {
     "fields": {
       "prodEnv": {
-        "label": "Environment",
-        "viewClass": "SelectView",
+        "label": "Username",
+        "viewClass": "TextFieldView",
         "required": true,
-        "model": {
-          "test": "Sandbox",
-          "login": "Production"
-        },
-        "prompt": "Select environment"
+        "prompt": "Kindly enter Mongo DB username"
       },
       "oauth": {
-        "label": "Authentication",
-        "viewClass": "OAuthFieldView",
-        "required": true
+        "label": "Password",
+        "viewClass": "TextFieldView",
+        "required": true,
+        "prompt": "Kindly enter Mongo DB Password"
       }
     },
     "mongo_credential": {
