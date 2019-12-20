@@ -17,7 +17,7 @@
       "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
     },
     "data": {
-      "viewClass": "TextFieldView",
+      "viewClass": "TextAreaView",
       "required": true,
       "title": "JSON Data to insert"
     }
