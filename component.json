@@ -15,13 +15,13 @@
   },
   "credentials": {
     "fields": {
-      "prodEnv": {
+      "username": {
         "label": "Username",
         "viewClass": "TextFieldView",
         "required": true,
         "prompt": "Kindly enter Mongo DB username"
       },
-      "oauth": {
+      "password": {
         "label": "Password",
         "viewClass": "TextFieldView",
         "required": true,
