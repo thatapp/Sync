@@ -1,6 +1,6 @@
 const request = require('request');
 const fs = require('fs');
-const MongoClient = require('mongodb').MongoClient;;
+const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const { messages } = require('elasticio-node');
 
@@ -14,6 +14,7 @@ if (fs.existsSync('.env')) {
 
 // eslint-disable-next-line consistent-return
 module.exports = function verify(credentials, cb) {
+    console.log(JSON.stringify(credentials));
     if (!credentials.username || credentials.password) {
         return cb(null, { verified: false });
     }
