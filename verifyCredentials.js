@@ -8,7 +8,7 @@ module.exports =  async function verify(credentials, cb) {
         useNewUrlParser: true,
         useUnifiedTopology: true, };
 
-    const uri = `mongodb://${credentials.username}:${credentials.password}.@mongo-0.kubernetes.thatapp.io,mongo-1.kubernetes.thatapp.io,mongo-2.kubernetes.thatapp.io:30127/?authSource=admin&replicaSet=mongodb-replicaset-operator&readPreference=secondaryPreferred&appname=MongoDB%20Compass&ssl=true`;
+    const uri = "mongodb:+srv://"+${credentials.username}+":"+${credentials.password}+"@mongo-0.kubernetes.thatapp.io,mongo-1.kubernetes.thatapp.io,mongo-2.kubernetes.thatapp.io:30127/?authSource=admin&replicaSet=mongodb-replicaset-operator&readPreference=secondaryPreferred&appname=MongoDB%20Compass&ssl=true";
     console.log(uri);
 
     await MongoClient.connect(uri, options,function(err, client) {
