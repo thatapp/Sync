@@ -13,7 +13,9 @@
         }
       },
       "cfg": {
-        "database" : "test_db",
+        "username" : "coretelligentDB",
+        "password" : "coretelligentDB@98",
+        "db_admin" : "avaDB_coretelligent",
         "collection" : "test_collection",
         "condition" : { "item_id": "ZZZ135" },
         "data": {
