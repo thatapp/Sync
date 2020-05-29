@@ -1,6 +1,6 @@
 {
-  "fixtures":{
-    "items":{
+  "fixtures": {
+    "successfulFixture": {
       "msg":{
         "headers":{},
         "body":{
@@ -21,6 +21,13 @@
           "item_id" : "dssds"
         }
       }
+    },
+    "failFixture": {
+      "cfg": {},
+      "msg": {
+        "body": {}
+      }
     }
   }
 }
+

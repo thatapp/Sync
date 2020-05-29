@@ -18,6 +18,7 @@
     "dependencies": {
         "@elastic.io/component-commons-library": "0.0.6",
         "dotenv": "^8.2.0",
+        "elasticio-cli": "^2.1.0",
         "elasticio-node": "0.0.8",
         "elasticio-sailor-nodejs": "2.5.1",
         "jsonata": "^1.7.0",
