@@ -1,13 +1,13 @@
 {
-    "name": "@elasticio/petstore-component-nodejs",
+    "name": "@elasticio/syncnode",
     "version": "0.1.0",
-    "description": "elastic.io component for the Petstore API",
+    "description": "Sync Component Update",
     "scripts": {
         "test": "exit 0"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:elasticio/petstore-component-nodejs.git"
+        "url": "git@github.com:thatapp/Sync.git"
     },
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",
