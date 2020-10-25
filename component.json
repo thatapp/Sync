@@ -47,6 +47,26 @@
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
       }
+    },
+    "aggregate": {
+      "main": "./lib/actions/aggregate.js",
+      "title": "Aggregation into Sync Mongo",
+      "description": "Update data",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/aggregation.in.json"
+      }
     }
   }
 }
