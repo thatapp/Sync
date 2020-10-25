@@ -7,7 +7,7 @@
           "database" : "avaConvergeDB",
           "collection" : "dispatched",
           "condition" : { "item_id": "ZZZ135" },
-          "pipeline": [ { "$match": { "status": "A" } }],
+          "pipeline": [{ "$match":  { "MenuNumber": "0" }}],
           "data": {
             "name" : "william"
           }
