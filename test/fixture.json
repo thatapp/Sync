@@ -4,9 +4,10 @@
       "msg":{
         "headers":{},
         "body":{
-          "database" : "test_db",
-          "collection" : "test_collection",
+          "database" : "avaConvergeDB",
+          "collection" : "dispatched",
           "condition" : { "item_id": "ZZZ135" },
+          "pipeline": [ { "$match": { "status": "A" } }],
           "data": {
             "name" : "william"
           }
