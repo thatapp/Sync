@@ -4,21 +4,18 @@
       "msg":{
         "headers":{},
         "body":{
-          "database" : "avaConvergeDB",
-          "collection" : "dispatched",
-          "condition" : { "item_id": "ZZZ135" },
-          "pipeline": [{ "$match":  { "MenuNumber": "0" }}],
+          "database" : "testDB",
+          "collection" : "testCollection",
           "data": {
             "name" : "william"
           }
         }
       },
       "cfg": {
-        "username" : "coretelligentDB",
-        "password" : "coretelligentDB@98",
-        "db_admin" : "avaDB_coretelligent",
+        "username" : "seth",
+        "password" : "techego-Cloud123.",
+        "db_admin" : "admin",
         "collection" : "test_collection",
-        "condition" : { "item_id": "ZZZ135" },
         "data": {
           "name" : "william",
           "item_id" : "dssds"
