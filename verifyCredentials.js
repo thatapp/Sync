@@ -11,12 +11,9 @@ module.exports =  async function verify(credentials, cb) {
 
     var options = {
         useNewUrlParser: true,
-        useUnifiedTopology: true,
-        sslValidate:true,
-        sslCA:ca
     };
 
-    const uri ="mongodb://" + ${credentials.username} + ":" + ${credentials.password} + "@mongo-0.kubernetes.thatapp.io,mongo-1.kubernetes.thatapp.io,mongo-2.kubernetes.thatapp.io:27017/?authSource="+${credentials.db_admin}+"&replicaSet=mongodb-replicaset-operator&readPreference=secondaryPreferred&ssl=true";
+    const uri = "mongodb+srv://" + username + ":" + password +"@migratecluster0.si2d6.mongodb.net/admin?connectTimeoutMS=300000&keepAlive=300000";
     console.log(uri);
 
     await MongoClient.connect(uri, options,function(err, client) {
