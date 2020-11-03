@@ -2,12 +2,9 @@ var MongoClient = require('mongodb').MongoClient,
     f = require('util').format,
     fs = require('fs');
 
-const assert = require('assert');
 
-
-module.exports =  async function verify(credentials, cb) {
+module.exports =  function verify(credentials, cb) {
     console.log(JSON.stringify(credentials));
-
     var options = {
         useNewUrlParser: true,
         useUnifiedTopology: true
@@ -15,7 +12,7 @@ module.exports =  async function verify(credentials, cb) {
 
     const uri = "mongodb+srv://" + username + ":" + password +"@migratecluster0.si2d6.mongodb.net/admin?connectTimeoutMS=300000&keepAlive=300000";
 
-    await MongoClient.connect(uri, options,function(err, client) {
+    MongoClient.connect(uri, options,function(err, client) {
         console.log(err);
         console.log("Connected successfully to server");
     });
