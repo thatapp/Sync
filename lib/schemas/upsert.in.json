@@ -12,7 +12,7 @@
       "title": "Collection"
     },
     "condition": {
-      "type": "string",
+      "type": "object",
       "required": true,
       "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
     },
