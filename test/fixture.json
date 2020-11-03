@@ -47,8 +47,8 @@
         }
       },
       "cfg": {
-        "username" : "seth",
-        "password" : "techego-Cloud123.",
+        "username" : "coretelligentDBNew",
+        "password" : "coretelligentDB98",
         "db_admin" : "admin",
         "collection" : "test_collection",
         "data": {
