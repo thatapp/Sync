@@ -16,8 +16,8 @@
       "required": true,
       "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
     },
-    "data": {
-      "viewClass": "TextAreaView",
+    "save_data": {
+      "viewClass": "object",
       "required": true,
       "title": "JSON Data to insert"
     }
