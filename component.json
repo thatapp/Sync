@@ -42,10 +42,18 @@
   "actions": {
     "upsert": {
       "main": "./lib/actions/upsert.js",
-      "title": "Add/Update data into Sync Mongo",
-      "description": "Update data",
+      "title": "Upsert data into Sync Mongo",
+      "description": "Upsert data",
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
+      }
+    },
+    "updateDocs": {
+      "main": "./lib/actions/update.js",
+      "title": "Add/Update Document into Sync Mongo",
+      "description": "Update data",
+      "metadata": {
+        "in": "./lib/schemas/update.in.json"
       }
     },
     "aggregate": {

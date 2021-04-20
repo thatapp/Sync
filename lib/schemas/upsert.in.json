@@ -1,25 +1,26 @@
 {
-  "type": "object",
-  "properties": {
-    "database": {
-      "type": "string",
-      "required": true,
-      "title": "Database"
-    },
-    "collection": {
-      "type": "string",
-      "required": true,
-      "title": "Collection"
-    },
-    "condition": {
-      "type": "object",
-      "required": true,
-      "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
-    },
-    "save_data": {
-      "type": "object",
-      "required": true,
-      "title": "JSON Data to insert"
+    "type": "object",
+    "properties": {
+      "database": {
+        "type": "string",
+        "required": true,
+        "title": "Database"
+      },
+      "collection": {
+        "type": "string",
+        "required": true,
+        "title": "Collection"
+      },
+      "condition": {
+        "type": "object",
+        "required": true,
+        "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
+      },
+      "save_data": {
+        "type": "object",
+        "required": true,
+        "title": "JSON Data to upsert"
+      }
     }
   }
-}
+  
