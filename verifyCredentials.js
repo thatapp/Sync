@@ -10,7 +10,10 @@ module.exports =  function verify(credentials, cb) {
         useUnifiedTopology: true
     };
 
-    const uri = "mongodb+srv://" + username + ":" + password +"@migratecluster0.si2d6.mongodb.net/admin?connectTimeoutMS=300000&keepAlive=300000";
+    var username= credentials.username;
+    var password= credentials.password;
+
+    const uri = "mongodb+srv://" + username + ":" + password +"@migratecluster0.si2d6.mongodb.net/"+credentials.db_admin+"?connectTimeoutMS=300000&keepAlive=300000";
 
     MongoClient.connect(uri, options,function(err, client) {
         console.log(err);
