@@ -4,51 +4,17 @@
       "msg":{
         "headers":{},
         "body":{
-          "database" : "avaDB_coretelligent",
-          "collection" : "vsa_devices",
+          "database" : "testDB",
+          "collection" : "testCollection",
           "condition": {
-            "id": 100194929240129
+            "item_id": 1234
           },
-          "save_data": {
-            "username": "DonielleYoung",
-            "usedSpace": 84006,
-            "type": "Workstation",
-            "totalSpace": 242920,
-            "sysWarrantyExpireDate": "2023-05-20T00:00:00.000Z",
-            "sysPurchaseDate": "2020-05-21T00:00:00.000Z",
-            "status": "Offline",
-            "server_int": 0,
-            "serialNumber": "PF1TG45M",
-            "productName": "20NJ0000US",
-            "patchesTotal": 11,
-            "patchesRebootPending": 0,
-            "patchesPending": 0,
-            "patchesMissingApproved": 0,
-            "patchesInstalled": 11,
-            "patchesFailed": 0,
-            "osType": "10",
-            "osInfo": "Enterprise x64 Edition  Build 18363",
-            "manufacturer": "LENOVO",
-            "macAddress": "48:2A:E3:6E:11:E1",
-            "lastLoginName": "DonielleYoung",
-            "lastCheckinTime": "2020-11-02T11:23:32.800Z",
-            "ipAddress": "10.11.24.63",
-            "hostName": "LTNASLT1TG45M",
-            "freeSpace": 158914,
-            "firstCheckin": "2020-06-08T14:47:27.483Z",
-            "desktop_int": 1,
-            "dbTimestamp": "2020-11-02T11:23:32.800Z",
-            "currentLogin": "DonielleYoung",
-            "core_id_str": "CORE127",
-            "chassisType": "Notebook",
-            "alerts7Days": 0,
-            "id": 100194929240129
-          }
+          "save_data": {"hello":  23232}
         }
       },
       "cfg": {
-        "username" : "coretelligentDBNew",
-        "password" : "coretelligentDB98",
+        "username" : "seth",
+        "password" : "techego-Cloud123.",
         "db_admin" : "admin",
         "collection" : "test_collection",
         "data": {
