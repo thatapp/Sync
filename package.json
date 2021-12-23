@@ -19,10 +19,10 @@
         "@elastic.io/component-commons-library": "1.1.5",
         "dotenv": "^8.2.0",
         "elasticio-cli": "^2.1.0",
-        "elasticio-node": "0.0.8",
-        "elasticio-sailor-nodejs": "2.6.24",
+        "elasticio-node": "0.0.9",
+        "elasticio-sailor-nodejs": "2.6.26",
         "jsonata": "^1.8.3",
-        "mongodb": "3.6.6"
+        "mongodb": "4.2.2"
     },
     "devDependencies": {
         "eslint": "6.5.1",
