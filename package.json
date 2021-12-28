@@ -1,7 +1,7 @@
 {
     "name": "@elasticio/syncnode",
-    "version": "0.1.0",
-    "description": "Sync Component Update",
+    "version": "0.1.1",
+    "description": "Sync Component: This gives your a premium access to our MongoDB Instance",
     "scripts": {
         "test": "exit 0"
     },
@@ -16,18 +16,18 @@
         "npm": ">=7.5.3"
     },
     "dependencies": {
-        "@elastic.io/component-commons-library": "1.1.5",
-        "axios": "^0.27.1",
-        "dotenv": "^8.2.0",
+        "@elastic.io/component-commons-library": "2.0.2",
+        "axios": "^0.27.2",
+        "dotenv": "^16.0.0",
         "elasticio-cli": "^2.1.0",
         "elasticio-node": "0.0.9",
-        "elasticio-sailor-nodejs": "2.6.26",
-        "jsonata": "^1.8.3",
-        "mongodb": "4.2.2"
+        "elasticio-sailor-nodejs": "2.6.27",
+        "jsonata": "^1.8.6",
+        "mongodb": "4.5.0"
     },
     "devDependencies": {
-        "eslint": "6.5.1",
-        "eslint-config-airbnb-base": "14.0.0",
-        "eslint-plugin-import": "2.18.2"
+        "eslint": "8.14.0",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-plugin-import": "2.26.0"
     }
 }
