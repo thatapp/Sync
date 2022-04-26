@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "@elastic.io/component-commons-library": "1.1.5",
+        "axios": "^0.27.1",
         "dotenv": "^8.2.0",
         "elasticio-cli": "^2.1.0",
         "elasticio-node": "0.0.9",
