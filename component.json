@@ -3,16 +3,6 @@
   "description": "Sync extension to connect with Sync Mongo Storage Engine",
   "docsUrl": "https://github.com/thatapp/Sync",
   "buildType":"docker",
-  "envVars": {
-    "USERNAME": {
-      "required": true,
-      "description": "Your Mongo Username"
-    },
-    "PASSWORD": {
-      "required": true,
-      "description": "Your Mongo Password"
-    }
-  },
   "actions": {
     "upsert": {
       "main": "./lib/actions/upsert.js",
