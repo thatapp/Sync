@@ -13,32 +13,6 @@
       "description": "Your Mongo Password"
     }
   },
-  "credentials": {
-    "fields": {
-      "username": {
-        "label": "Username",
-        "viewClass": "TextFieldView",
-        "required": true,
-        "prompt": "Kindly enter Mongo DB username"
-      },
-      "password": {
-        "label": "Password",
-        "viewClass": "TextFieldView",
-        "required": true,
-        "prompt": "Kindly enter Mongo DB Password"
-      },
-      "db_admin": {
-        "label": "DB Admin",
-        "viewClass": "TextFieldView",
-        "required": true,
-        "prompt": "Kindly enter MongoDB Admin"
-      }
-    },
-    "mongo_credential": {
-      "username": "{{USERNAME}}",
-      "password": "{{PASSWORD}}"
-    }
-  },
   "actions": {
     "upsert": {
       "main": "./lib/actions/upsert.js",
