@@ -16,7 +16,7 @@
   "actions": {
     "upsert_old": {
       "main": "./lib/actions/upsert_old.js",
-      "title": "Upsert data into Sync Mongo",
+      "title": "Upsert data into Sync Mongo Old",
       "description": "Upsert data",
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
@@ -24,7 +24,7 @@
     },
     "upsert_new": {
       "main": "./lib/actions/upsert_new.js",
-      "title": "Upsert data into Sync Mongo",
+      "title": "Upsert data into Sync Mongo New",
       "description": "Upsert data",
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
@@ -32,7 +32,7 @@
     },
     "aggregate_old": {
       "main": "./lib/actions/aggregate_old.js",
-      "title": "Aggregation into Sync Mongo",
+      "title": "Aggregation into Sync Mongo Old",
       "description": "Update data",
       "fields": {
         "behaviour": {
@@ -52,7 +52,7 @@
     },
     "aggregate_new": {
       "main": "./lib/actions/aggregate_new.js",
-      "title": "Aggregation into Sync Mongo",
+      "title": "Aggregation into Sync Mongo New",
       "description": "Update data",
       "fields": {
         "behaviour": {
