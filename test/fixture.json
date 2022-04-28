@@ -7,9 +7,9 @@
           "database" : "avaSync_DB",
           "collection" : "sync",
           "condition": {
-            "item_id": 8293802
+            "item_id": "8293802"
           },
-          "save_data": {"talent_name":  "Kareem Yomi"}
+          "save_data": {"talent_name":  "William Nwogbo"}
         }
       },
       "cfg": {
