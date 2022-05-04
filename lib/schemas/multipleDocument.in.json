@@ -15,6 +15,21 @@
         "type": "object",
         "required": true,
         "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
+      },
+      "sort": {
+        "type": "object",
+        "required": false,
+        "title": "Sort"
+      },
+      "limit": {
+        "type": "number",
+        "required": false,
+        "title": "Limit"
+      },
+      "skip": {
+        "type": "number",
+        "required": false,
+        "title": "Skip"
       }
     }
   }
