@@ -11,6 +11,10 @@
     "PASSWORD": {
       "required": true,
       "description": "Your Mongo Password"
+    },
+    "API_KEY": {
+      "required": true,
+      "description": "Kindly enter the API Key for the Data APIs to be functional"
     }
   },
   "credentials": {
