@@ -44,40 +44,12 @@
     }
   },
   "actions": {
-    "upsert_old": {
-      "main": "./lib/actions/upsert_old.js",
-      "title": "Upsert data via MongoDB connector",
-      "description": "Upsert data",
-      "metadata": {
-        "in": "./lib/schemas/upsert.in.json"
-      }
-    },
     "upsert": {
       "main": "./lib/actions/upsert.js",
       "title": "Upsert using Data API",
       "description": "Upsert data using Data API",
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
-      }
-    },
-    "aggregate_old": {
-      "main": "./lib/actions/aggregate_old.js",
-      "title": "Aggregation into Sync using MongoDB",
-      "description": "Update data",
-      "fields": {
-        "behaviour": {
-          "viewClass": "SelectView",
-          "prompt": "Emit Behavior",
-          "label": "Emit Behavior",
-          "required": true,
-          "model": {
-            "individually": "Emit Individually",
-            "fetch_all": "Fetch All"
-          }
-        }
-      },
-      "metadata": {
-        "in": "./lib/schemas/aggregation.in.json"
       }
     },
     "aggregate": {
