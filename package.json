@@ -12,8 +12,7 @@
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",
     "engines": {
-        "node": "16.15.0",
-        "npm": ">=7.5.3"
+        "node": "16.14.2"
     },
     "dependencies": {
         "@elastic.io/component-commons-library": "1.1.5",
