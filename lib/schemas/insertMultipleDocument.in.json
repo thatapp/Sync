@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+      "database": {
+        "type": "string",
+        "required": true,
+        "title": "Database"
+      },
+      "collection": {
+        "type": "string",
+        "required": true,
+        "title": "Collection"
+      },
+      "save_data": {
+        "type": "array",
+        "required": true,
+        "title": "Array of JSON Data to insert"
+      }
+    }
+  }
+  

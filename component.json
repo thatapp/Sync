@@ -17,41 +17,39 @@
       "description": "Kindly enter the API Key for the Data APIs to be functional"
     }
   },
-  "actions": {
-    "upsert_old": {
-      "main": "./lib/actions/upsert_old.js",
-      "title": "Upsert data via MongoDB connector",
-      "description": "Upsert data",
-      "metadata": {
-        "in": "./lib/schemas/upsert.in.json"
+  "credentials": {
+    "fields": {
+      "username": {
+        "label": "Username",
+        "viewClass": "TextFieldView",
+        "required": true,
+        "prompt": "Kindly enter Mongo DB username"
+      },
+      "password": {
+        "label": "Password",
+        "viewClass": "TextFieldView",
+        "required": true,
+        "prompt": "Kindly enter Mongo DB Password"
+      },
+      "db_admin": {
+        "label": "DB Admin",
+        "viewClass": "TextFieldView",
+        "required": true,
+        "prompt": "Kindly enter MongoDB Admin"
       }
     },
+    "mongo_credential": {
+      "username": "{{USERNAME}}",
+      "password": "{{PASSWORD}}"
+    }
+  },
+  "actions": {
     "upsert": {
       "main": "./lib/actions/upsert.js",
       "title": "Upsert using Data API",
       "description": "Upsert data using Data API",
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
-      }
-    },
-    "aggregate_old": {
-      "main": "./lib/actions/aggregate_old.js",
-      "title": "Aggregation into Sync using MongoDB",
-      "description": "Update data",
-      "fields": {
-        "behaviour": {
-          "viewClass": "SelectView",
-          "prompt": "Emit Behavior",
-          "label": "Emit Behavior",
-          "required": true,
-          "model": {
-            "individually": "Emit Individually",
-            "fetch_all": "Fetch All"
-          }
-        }
-      },
-      "metadata": {
-        "in": "./lib/schemas/aggregation.in.json"
       }
     },
     "aggregate": {
@@ -72,6 +70,166 @@
       },
       "metadata": {
         "in": "./lib/schemas/aggregation.in.json"
+      }
+    },
+    "findOneDocument": {
+      "main": "./lib/actions/singleDocument.js",
+      "title": "Find a Single Document from Sync using Data API",
+      "description": "Find a Single Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/singleDocument.in.json"
+      }
+    },
+    "findMultipleDocument": {
+      "main": "./lib/actions/multipleDocument.js",
+      "title": "Find multiple Document from Sync using Data API",
+      "description": "Find multiple Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/multipleDocument.in.json"
+      }
+    },
+    "insertSingleDocument": {
+      "main": "./lib/actions/insertSingleDocument.js",
+      "title": "Insert a Document from Sync using Data API",
+      "description": "Insert a Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/insertSingleDocument.in.json"
+      }
+    },
+    "insertMultipleDocument": {
+      "main": "./lib/actions/insertMultipleDocument.js",
+      "title": "Insert multiple Document from Sync using Data API",
+      "description": "Insert multiple Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/insertMultipleDocument.in.json"
+      }
+    },
+    "updateSingleDocument": {
+      "main": "./lib/actions/updateSingleDocument.js",
+      "title": "Update single Document from Sync using Data API",
+      "description": "Update single Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/updateSingleDocument.in.json"
+      }
+    },
+    "replaceDocument": {
+      "main": "./lib/actions/replace.js",
+      "title": "Replace a Document from Sync using Data API",
+      "description": "Replace a Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/replace.in.json"
+      }
+    },
+    "deleteOneDocument": {
+      "main": "./lib/actions/deleteOneDocument.js",
+      "title": "Delete One Document from Sync using Data API",
+      "description": "Delete One Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/deleteOneDocument.in.json"
+      }
+    },
+    "deletemultipleDocument": {
+      "main": "./lib/actions/deletemultipleDocument.js",
+      "title": "Delete multiple Document from Sync using Data API",
+      "description": "Delete multiple Document from Sync using Data API",
+      "fields": {
+        "behaviour": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individually": "Emit Individually",
+            "fetch_all": "Fetch All"
+          }
+        }
+      },
+      "metadata": {
+        "in": "./lib/schemas/deletemultipleDocument.in.json"
       }
     }
   }

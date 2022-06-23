@@ -12,11 +12,11 @@
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",
     "engines": {
-        "node": "12.18.3",
+        "node": "16.15.0",
         "npm": ">=7.5.3"
     },
     "dependencies": {
-        "@elastic.io/component-commons-library": "2.0.2",
+        "@elastic.io/component-commons-library": "1.1.5",
         "axios": "^0.27.2",
         "dotenv": "^16.0.0",
         "elasticio-cli": "^2.1.0",
