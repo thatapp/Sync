@@ -12,8 +12,7 @@
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",
     "engines": {
-        "node": "16.15.0",
-        "npm": ">=7.5.3"
+        "node": "14"
     },
     "dependencies": {
         "@elastic.io/component-commons-library": "1.1.5",
@@ -21,7 +20,7 @@
         "dotenv": "^16.0.0",
         "elasticio-cli": "^2.1.0",
         "elasticio-node": "0.0.9",
-        "elasticio-sailor-nodejs": "2.6.26",
+        "elasticio-sailor-nodejs": "2.6.27",
         "jsonata": "^1.8.6",
         "mongodb": "4.5.0"
     },
