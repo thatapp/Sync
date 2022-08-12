@@ -14,7 +14,7 @@
       "condition": {
         "type": "object",
         "required": true,
-        "title": "Condition for Update e.g { item_id: \"ZZZ135\" }"
+        "title": "Condition e.g { item_id: \"ZZZ135\" }"
       },
       "sort": {
         "type": "object",
