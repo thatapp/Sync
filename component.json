@@ -54,8 +54,8 @@
     },
     "aggregate": {
       "main": "./lib/actions/aggregate.js",
-      "title": "Aggregation into Sync using Data API",
-      "description": "Aggregation into Sync using Data API",
+      "title": "Aggregation from Sync using Data API",
+      "description": "Aggregation from Sync using Data API",
       "metadata": {
         "in": "./lib/schemas/aggregation.in.json"
       }
