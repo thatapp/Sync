@@ -40,7 +40,8 @@
     },
     "mongo_credential": {
       "username": "{{USERNAME}}",
-      "password": "{{PASSWORD}}"
+      "password": "{{PASSWORD}}",
+      "apiKey": "{{API_KEY}}"
     }
   },
   "actions": {
