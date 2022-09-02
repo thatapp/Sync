@@ -1,0 +1,7 @@
+exports.init = async function init(cfg) {...)
+Pavel Voropaiev3:18 PM
+this.logger.imnfo('Hi');
+this.logger.info('Hi');
+Pavel Voropaiev3:20 PM
+PasswordFieldView
+exports.init = async function init(cfg) {...}
