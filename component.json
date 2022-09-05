@@ -9,11 +9,7 @@
       "description": "Kindly enter the API Key for the MongoDB Data APIs to be functional"
     }
   },
-  "credentials": {
-    "mongo_credential": {
-      "apiKey": "{{API_KEY}}"
-    }
-  },
+  
   "actions": {
     "upsert": {
       "main": "./lib/actions/upsert.js",
