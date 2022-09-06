@@ -2,11 +2,16 @@
   "title": "Sync by AVA",
   "description": "Sync extension to connect with Sync Mongo Storage Engine",
   "docsUrl": "https://github.com/thatapp/Sync",
-  "buildType":"docker",
+  "buildType": "docker",
   "envVars": {
     "API_KEY": {
       "required": true,
       "description": "Kindly enter the API Key for the MongoDB Data APIs to be functional"
+    }
+  },
+  "credentials": {
+    "mongo_credential": {
+      "apiKey": "{{API_KEY}}"
     }
   },
   "actions": {
