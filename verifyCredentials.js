@@ -1,25 +1,31 @@
-var MongoClient = require('mongodb').MongoClient,
-    f = require('util').format,
-    fs = require('fs');
+const axioshelper = require("./lib/axios");
+const {messages} = require("elasticio-node");
 
 
-module.exports =  function verify(credentials, cb) {
-    console.log(JSON.stringify(credentials));
-    var options = {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    };
+module.exports = async function verify(credentials, cb) {
+    try {
+        let url = 'https://data.mongodb-api.com/app/data-maqtf/endpoint/data/beta/action/findOne';
+        let ClusterName = "MigrateCluster0";
+        this.logger.info(JSON.stringify(credentials));
+        let apiKey = credentials.apiKey;
 
-    var username= credentials.username;
-    var password= credentials.password;
+        let payload = {
+            dataSource: ClusterName,
+            database: "avaSync_DB",
+            collection: "sync",
+            filter: {
+                "item_id": "8293825"
+            }
+        };
 
-    const uri = "mongodb+srv://" + username + ":" + password +"@migratecluster0.si2d6.mongodb.net/"+credentials.db_admin+"?connectTimeoutMS=300000&keepAlive=300000";
+        let data_ = await axioshelper.initialiseAxios(url, payload, apiKey);
 
-    MongoClient.connect(uri, options,function(err, client) {
-        console.log(err);
-        console.log("Connected successfully to server");
-    });
+        this.logger.info(JSON.stringify(data_));
 
-    return cb(null, { verified: true });
+        return cb(null, {verified: true});
+    } catch (e) {
+        return cb(null, {verified: false});
+    }
+
 };
 

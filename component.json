@@ -4,15 +4,19 @@
   "docsUrl": "https://github.com/thatapp/Sync",
   "buildType": "docker",
   "envVars": {
-    "API_KEY": {
+    "apikey2": {
       "required": true,
-      "description": "Kindly enter the API Key for the MongoDB Data APIs to be functional"
+      "description": "Your API key from MongoDB"
     }
   },
   "credentials": {
-    "mongo_credential": {
-      "apiKey": "{{API_KEY}}"
-    }
+    "fields": {
+      "apiKey": {
+        "label": "APIKey: ",
+        "viewClass": "PasswordFieldView",
+        "required": false,
+        "prompt": "Api key is gotten from the your MongoDB dashboard."
+      }
   },
   "actions": {
     "upsert": {
