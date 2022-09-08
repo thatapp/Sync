@@ -17,6 +17,7 @@
         "required": false,
         "prompt": "Api key is gotten from the your MongoDB dashboard."
       }
+    }
   },
   "actions": {
     "upsert": {
