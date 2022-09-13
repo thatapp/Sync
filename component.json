@@ -20,10 +20,10 @@
         }
     },
     "actions": {
-        "upsert": {
+        "updateManyDocument": {
             "main": "./lib/actions/upsert.js",
-            "title": "Upsert using Data API",
-            "description": "Upsert data using Data API",
+            "title": "Update many document",
+            "description": "Update manay data using Data API",
             "fields": {
                 "upsert": {
                     "label": "Upsert",
@@ -82,7 +82,7 @@
         },
         "updateSingleDocument": {
             "main": "./lib/actions/updateSingleDocument.js",
-            "title": "Update single Document from Sync using Data API",
+            "title": "Update Single Document",
             "description": "Update single Document from Sync using Data API",
             "fields": {
                 "upsert": {
