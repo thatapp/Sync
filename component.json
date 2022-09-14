@@ -3,19 +3,40 @@
   "description": "Sync extension to connect with Sync Mongo Storage Engine",
   "docsUrl": "https://github.com/thatapp/Sync",
   "buildType": "docker",
-  "envVars": {
-    "apikey2": {
-      "required": true,
-      "description": "Your API key from MongoDB"
-    }
-  },
   "credentials": {
     "fields": {
       "apiKey": {
         "label": "APIKey: ",
         "viewClass": "PasswordFieldView",
-        "required": false,
+        "required": true,
         "prompt": "Api key is gotten from the your MongoDB dashboard."
+      },
+      "apiVersion": {
+        "label": "API Version",
+        "viewClass": "TextFieldView",
+        "required": false,
+        "placeholder": "beta",
+        "help": {
+          "description": "Provide the API version, \"beta\" by default"
+        }
+      },
+      "appId": {
+        "label": "Data API App ID",
+        "viewClass": "TextFieldView",
+        "required": false,
+        "placeholder": "data-maqtf",
+        "help": {
+          "description": "Your Data API App ID, which you can find in the URL Endpoint section of the MongoDB UI, \"data-maqtf\" by default"
+        }
+      },
+      "clusterName": {
+        "label": "Cluster Name",
+        "viewClass": "TextFieldView",
+        "required": false,
+        "placeholder": "MigrateCluster0",
+        "help": {
+          "description": "The name of a cluster with the Data API enabled, \"MigrateCluster0\" by default"
+        }
       }
     }
   },
