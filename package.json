@@ -12,15 +12,12 @@
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",
     "engines": {
-        "node": "14"
+        "node": "18.x"
     },
     "dependencies": {
-        "axios": ">=0.27.2",
-        "dotenv": "^16.0.0",
+        "axios": "0.27.2",
         "elasticio-node": "0.0.9",
-        "elasticio-sailor-nodejs": ">=2.6.29",
-        "jsonata": "^1.8.6",
-        "mongodb": "4.5.0"
+        "elasticio-sailor-nodejs": "2.6.29"
     },
     "devDependencies": {
         "eslint": "8.14.0",

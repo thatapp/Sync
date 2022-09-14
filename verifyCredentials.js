@@ -1,31 +1,17 @@
-const axioshelper = require("./lib/axios");
-const {messages} = require("elasticio-node");
+const { Client } = require("./lib/client");
 
-
-module.exports = async function verify(credentials, cb) {
+module.exports = async function verify(cfg) {
     try {
-        let url = 'https://data.mongodb-api.com/app/data-maqtf/endpoint/data/beta/action/findOne';
-        let ClusterName = "MigrateCluster0";
-        this.logger.info(JSON.stringify(credentials));
-        let apiKey = credentials.apiKey;
+        const client = new Client(this, cfg);
+        const filter = { item_id: "8293825" };
 
-        let payload = {
-            dataSource: ClusterName,
-            database: "avaSync_DB",
-            collection: "sync",
-            filter: {
-                "item_id": "8293825"
-            }
-        };
+        await client.apiRequest('findOne', { filter }, { body: { database: "avaSync_DB", collection: "sync" } });
 
-        let data_ = await axioshelper.initialiseAxios(url, payload, apiKey);
-
-        this.logger.info(JSON.stringify(data_));
-
-        return cb(null, {verified: true});
+        this.logger.info('Verification completed successfully');
+        return { verified: true };
     } catch (e) {
-        return cb(null, {verified: false});
+        this.logger.error('Verification failed');
+        throw e;
     }
-
 };
 
