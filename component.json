@@ -1,7 +1,7 @@
 {
-    "title": "Sync Beta Extension",
-    "description": "A version upgrade of Sync connector",
-    "docsUrl": "",
+    "title": "Sync by AVA",
+    "description": "Sync extension to connect with Sync Mongo Storage Engine",
+    "docsUrl": "https://github.com/thatapp/Sync",
     "buildType": "docker",
     "envVars": {
         "API_KEY": {
