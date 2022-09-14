@@ -1,10 +1,13 @@
 {
-    "name": "test-component-connector",
-    "version": "2.0.0",
-    "description": "# A Play ground component",
-    "main": "component.json",
+    "name": "@elasticio/syncnode",
+    "version": "0.1.1",
+    "description": "Sync Component: This gives your a premium access to our MongoDB Instance",
     "scripts": {
         "test": "exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:thatapp/Sync.git"
     },
     "author": "elastic.io GmbH",
     "license": "BSD-2-Clause",
