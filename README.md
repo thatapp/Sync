@@ -86,7 +86,10 @@ none
 Returns documents in the collection that match filter
 
 #### Configuration Fields
-none
+* **Emit Behavior** - (dropdown, required): Select how to proceed documents:
+  * **Emit Individually** - Each document in separate message
+  * **Emit Batch** - All documents in one message
+
 #### Input Metadata
 * **Database** - (string, required): Database name
 * **Collection** - (string, required): Collection name

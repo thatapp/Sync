@@ -8,7 +8,7 @@ chai.use(require('chai-as-promised'));
 
 const { expect } = chai;
 
-const fakeResponse = { id: 1 };
+const fakeResponse = { documents: [{ doc1: 1 }, { doc2: 2 }] };
 
 describe('"Find multiple Document" action test', () => {
   describe('succeed', () => {
@@ -20,12 +20,24 @@ describe('"Find multiple Document" action test', () => {
       sinon.restore();
     });
 
-    it('process', async () => {
+    it('process, emit_behavior: batch', async () => {
       const body = { condition: 'some data' };
       const context = getContext();
-      await process.call(context, { body }, {});
+      const cfg = { emit_behavior: 'batch' };
+      await process.call(context, { body }, cfg);
       expect(context.emit.callCount).to.be.eq(1);
       expect(context.emit.getCall(0).args[1].body).to.be.deep.eq(fakeResponse);
+      expect(execRequest.getCall(0).args).to.be.deep.eq(['find', { filter: body.condition }, { body }]);
+    });
+
+    it('process, emit_behavior:individual', async () => {
+      const body = { condition: 'some data' };
+      const context = getContext();
+      const cfg = { emit_behavior: 'individual' };
+      await process.call(context, { body }, cfg);
+      expect(context.emit.callCount).to.be.eq(2);
+      expect(context.emit.getCall(0).args[1].body).to.be.deep.eq(fakeResponse.documents[0]);
+      expect(context.emit.getCall(1).args[1].body).to.be.deep.eq(fakeResponse.documents[1]);
       expect(execRequest.getCall(0).args).to.be.deep.eq(['find', { filter: body.condition }, { body }]);
     });
   });
