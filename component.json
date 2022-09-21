@@ -46,7 +46,8 @@
       "title": "Upsert using Data API",
       "description": "Upsert data using Data API",
       "metadata": {
-        "in": "./lib/schemas/upsert.in.json"
+        "in": "./lib/schemas/upsert.in.json",
+        "out": "./lib/schemas/upsert.out.json"
       }
     },
     "aggregate": {
@@ -54,7 +55,8 @@
       "title": "Aggregation from Sync using Data API",
       "description": "Aggregation from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/aggregation.in.json"
+        "in": "./lib/schemas/aggregation.in.json",
+        "out": "./lib/schemas/aggregation.out.json"
       }
     },
     "findOneDocument": {
@@ -62,7 +64,8 @@
       "title": "Find a Single Document from Sync using Data API",
       "description": "Find a Single Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/singleDocument.in.json"
+        "in": "./lib/schemas/singleDocument.in.json",
+        "out": "./lib/schemas/singleDocument.out.json"
       }
     },
     "findMultipleDocument": {
@@ -70,7 +73,8 @@
       "title": "Find multiple Document from Sync using Data API",
       "description": "Find multiple Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/multipleDocument.in.json"
+        "in": "./lib/schemas/multipleDocument.in.json",
+        "out": "./lib/schemas/multipleDocument.out.json"
       }
     },
     "insertSingleDocument": {
@@ -78,7 +82,8 @@
       "title": "Insert a Document from Sync using Data API",
       "description": "Insert a Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/insertSingleDocument.in.json"
+        "in": "./lib/schemas/insertSingleDocument.in.json",
+        "out": "./lib/schemas/insertSingleDocument.out.json"
       }
     },
     "insertMultipleDocument": {
@@ -86,7 +91,8 @@
       "title": "Insert multiple Document from Sync using Data API",
       "description": "Insert multiple Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/insertMultipleDocument.in.json"
+        "in": "./lib/schemas/insertMultipleDocument.in.json",
+        "out": "./lib/schemas/insertMultipleDocument.out.json"
       }
     },
     "updateSingleDocument": {
@@ -94,7 +100,8 @@
       "title": "Update single Document from Sync using Data API",
       "description": "Update single Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/updateSingleDocument.in.json"
+        "in": "./lib/schemas/updateSingleDocument.in.json",
+        "out": "./lib/schemas/updateSingleDocument.out.json"
       }
     },
     "replaceDocument": {
@@ -102,7 +109,8 @@
       "title": "Replace a Document from Sync using Data API",
       "description": "Replace a Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/replace.in.json"
+        "in": "./lib/schemas/replace.in.json",
+        "out": "./lib/schemas/replace.out.json"
       }
     },
     "deleteOneDocument": {
@@ -110,7 +118,8 @@
       "title": "Delete One Document from Sync using Data API",
       "description": "Delete One Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/deleteOneDocument.in.json"
+        "in": "./lib/schemas/deleteOneDocument.in.json",
+        "out": "./lib/schemas/deleteOneDocument.out.json"
       }
     },
     "deletemultipleDocument": {
@@ -118,7 +127,8 @@
       "title": "Delete multiple Document from Sync using Data API",
       "description": "Delete multiple Document from Sync using Data API",
       "metadata": {
-        "in": "./lib/schemas/deletemultipleDocument.in.json"
+        "in": "./lib/schemas/deletemultipleDocument.in.json",
+        "out": "./lib/schemas/deletemultipleDocument.out.json"
       }
     }
   }

@@ -3,7 +3,8 @@
     "version": "0.1.1",
     "description": "Sync Component: This gives your a premium access to our MongoDB Instance",
     "scripts": {
-        "test": "exit 0"
+        "pretest": "eslint verifyCredentials.js lib spec --fix",
+        "test": "nyc mocha spec --recursive --timeout 50000"
     },
     "repository": {
         "type": "git",
@@ -15,13 +16,22 @@
         "node": "18.x"
     },
     "dependencies": {
+        "@elastic.io/component-commons-library": "3.1.0",
         "axios": "0.27.2",
         "elasticio-node": "0.0.9",
         "elasticio-sailor-nodejs": "2.6.29"
     },
     "devDependencies": {
-        "eslint": "8.14.0",
+        "@babel/eslint-parser": "7.19.1",
+        "@elastic.io/component-logger": "0.0.1",
+        "chai": "4.3.6",
+        "chai-as-promised": "7.1.1",
+        "dotenv": "16.0.2",
+        "eslint": "8.23.1",
         "eslint-config-airbnb-base": "15.0.0",
-        "eslint-plugin-import": "2.26.0"
+        "eslint-plugin-import": "2.26.0",
+        "mocha": "10.0.0",
+        "nyc": "15.1.0",
+        "sinon": "14.0.0"
     }
 }

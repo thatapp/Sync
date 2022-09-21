@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "documents": {
+      "type": "array",
+      "items": {
+        "_id": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

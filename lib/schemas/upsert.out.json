@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "matchedCount": {
+      "type": "number"
+    },
+    "modifiedCount": {
+      "type": "number"
+    },
+    "upsertedId": {
+      "type": "string"
+    }
+  }
+}
