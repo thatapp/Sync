@@ -47,18 +47,6 @@
       "description": "Upsert data using Data API",
       "metadata": {
         "in": "./lib/schemas/upsert.in.json"
-      },
-      "fields": {
-        "emit_behavior": {
-          "viewClass": "SelectView",
-          "prompt": "Emit Behavior",
-          "label": "Emit Behavior",
-          "required": true,
-          "model": {
-            "individual": "Emit Individually",
-            "batch": "Emit Batch"
-          }
-        }
       }
     },
     "aggregate": {
@@ -83,6 +71,18 @@
       "description": "Find multiple Document from Sync using Data API",
       "metadata": {
         "in": "./lib/schemas/multipleDocument.in.json"
+      },
+      "fields": {
+        "emit_behavior": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individual": "Emit Individually",
+            "batch": "Emit Batch"
+          }
+        }
       }
     },
     "insertSingleDocument": {
