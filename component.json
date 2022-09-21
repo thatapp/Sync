@@ -75,6 +75,18 @@
       "metadata": {
         "in": "./lib/schemas/multipleDocument.in.json",
         "out": "./lib/schemas/multipleDocument.out.json"
+      },
+      "fields": {
+        "emit_behavior": {
+          "viewClass": "SelectView",
+          "prompt": "Emit Behavior",
+          "label": "Emit Behavior",
+          "required": true,
+          "model": {
+            "individual": "Emit Individually",
+            "batch": "Emit Batch"
+          }
+        }
       }
     },
     "insertSingleDocument": {
