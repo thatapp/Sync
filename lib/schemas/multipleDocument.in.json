@@ -30,6 +30,11 @@
         "type": "number",
         "required": false,
         "title": "Skip"
+      },
+      "emitAll": {
+        "type": "string",
+        "required": false,
+        "title": "Skip"
       }
     }
   }
