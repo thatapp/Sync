@@ -1,35 +1,40 @@
 {
-    "type": "object",
-    "properties": {
-      "database": {
-        "type": "string",
-        "required": true,
-        "title": "Database"
-      },
-      "collection": {
-        "type": "string",
-        "required": true,
-        "title": "Collection"
-      },
-      "condition": {
-        "type": "object",
-        "required": true,
-        "title": "Condition e.g { item_id: \"ZZZ135\" }"
-      },
-      "sort": {
-        "type": "object",
-        "required": false,
-        "title": "Sort"
-      },
-      "limit": {
-        "type": "number",
-        "required": false,
-        "title": "Limit"
-      },
-      "skip": {
-        "type": "number",
-        "required": false,
-        "title": "Skip"
-      }
+  "type": "object",
+  "properties": {
+    "database": {
+      "type": "string",
+      "required": true,
+      "title": "Database"
+    },
+    "collection": {
+      "type": "string",
+      "required": true,
+      "title": "Collection"
+    },
+    "condition": {
+      "type": "object",
+      "required": true,
+      "title": "Condition e.g { item_id: \"ZZZ135\" }"
+    },
+    "sort": {
+      "type": "object",
+      "required": false,
+      "title": "Sort"
+    },
+    "limit": {
+      "type": "number",
+      "required": false,
+      "title": "Limit"
+    },
+    "skip": {
+      "type": "number",
+      "required": false,
+      "title": "Skip"
+    },
+    "emitAll": {
+      "type": "string",
+      "required": false,
+      "title": "Loop All"
     }
   }
+}
