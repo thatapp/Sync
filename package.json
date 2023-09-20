@@ -13,25 +13,25 @@
   "author": "elastic.io GmbH",
   "license": "BSD-2-Clause",
   "engines": {
-    "node": "14"
+    "node": "16.*"
   },
   "dependencies": {
-    "@elastic.io/component-commons-library": "3.1.0",
-    "axios": "0.27.2",
-    "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.6.29"
+    "@elastic.io/component-commons-library": "^3.1.5",
+    "axios": "1.5.0",
+    "elasticio-node": "^0.0.9",
+    "elasticio-sailor-nodejs": "^2.7.1"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.19.1",
+    "@babel/eslint-parser": "7.22.15",
     "@elastic.io/component-logger": "0.0.1",
-    "chai": "4.3.6",
+    "chai": "4.3.8",
     "chai-as-promised": "7.1.1",
-    "dotenv": "16.0.2",
-    "eslint": "8.23.1",
+    "dotenv": "16.3.1",
+    "eslint": "8.49.0",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.26.0",
-    "mocha": "10.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "mocha": "10.2.0",
     "nyc": "15.1.0",
-    "sinon": "14.0.0"
+    "sinon": "16.0.0"
   }
 }
